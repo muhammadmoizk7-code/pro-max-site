@@ -1,24 +1,23 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #0f172a, #020617);
-  color: white;
+  background: #0a0f1c;
+  color: #fff;
 }
 
-/* NAVBAR */
-.navbar {
+/* NAV */
+.nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
+  padding: 18px 50px;
+  background: #0f172a;
   position: sticky;
   top: 0;
 }
 
 .logo {
-  font-size: 24px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .logo span {
@@ -26,10 +25,14 @@ body {
 }
 
 nav a {
-  color: white;
-  margin-left: 20px;
+  color: #cbd5e1;
+  margin-left: 18px;
   text-decoration: none;
-  transition: 0.3s;
+  font-size: 14px;
+}
+
+nav a i {
+  margin-right: 6px;
 }
 
 nav a:hover {
@@ -39,61 +42,73 @@ nav a:hover {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 90px 20px;
 }
 
 .hero h1 {
-  font-size: 60px;
-}
-
-.hero span {
-  color: #38bdf8;
+  font-size: 48px;
 }
 
 .hero p {
-  opacity: 0.8;
-  font-size: 18px;
+  color: #94a3b8;
 }
 
+/* BUTTON */
 button {
-  margin-top: 20px;
-  padding: 12px 25px;
+  margin-top: 15px;
+  padding: 10px 20px;
   border: none;
   background: #38bdf8;
   color: black;
   font-weight: bold;
-  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-button:hover {
-  transform: scale(1.05);
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-/* FEATURES */
-.features {
+.dark {
+  background: #111827;
+}
+
+/* GRID */
+.grid {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 50px;
+  flex-wrap: wrap;
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
+  background: #0f172a;
+  padding: 18px;
+  border-radius: 10px;
+  width: 180px;
+  border: 1px solid #1e293b;
 }
 
-.card:hover {
-  transform: translateY(-10px);
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  background: #0f172a;
+  color: white;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
-  opacity: 0.6;
+  padding: 20px;
+  color: #64748b;
 }

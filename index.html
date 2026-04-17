@@ -3,38 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moiz | Premium Portfolio</title>
+  <title>Moiz | Developer Portfolio</title>
+
+  <!-- Icons (clean professional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="navbar">
-    <div class="logo">Moiz<span>.</span></div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header class="nav">
+  <div class="logo">Moiz<span>.</span></div>
 
-  <section class="hero">
-    <h1>Hi, I'm <span>Moiz</span></h1>
-    <p>Creative Developer • UI Designer • Web Builder</p>
-    <button onclick="window.location.href='projects.html'">
-      View My Work
-    </button>
-  </section>
+  <nav>
+    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+    <a href="#projects"><i class="fa-solid fa-code"></i> Projects</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+</header>
 
-  <section class="features">
-    <div class="card">⚡ Fast & Optimized</div>
-    <div class="card">🎨 Modern UI Design</div>
-    <div class="card">📱 Fully Responsive</div>
-  </section>
+<section class="hero">
+  <h1>Hi, I'm Moiz</h1>
+  <p>Frontend Developer • UI Designer • Node.js Learner</p>
+  <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+    View Work
+  </button>
+</section>
 
-  <footer>
-    <p>© 2026 Moiz. Built with ❤️</p>
-  </footer>
+<section id="about" class="section">
+  <h2><i class="fa-solid fa-user"></i> About</h2>
+  <p>
+    I build modern, fast and responsive websites using clean UI principles.
+  </p>
+</section>
+
+<section id="projects" class="section dark">
+  <h2><i class="fa-solid fa-code"></i> Projects</h2>
+
+  <div class="grid">
+    <div class="card"><i class="fa-solid fa-globe"></i> Portfolio Site</div>
+    <div class="card"><i class="fa-solid fa-bolt"></i> AI Builder</div>
+    <div class="card"><i class="fa-solid fa-chart-line"></i> Dashboard UI</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Moiz — All Rights Reserved
+</footer>
 
 </body>
 </html>
